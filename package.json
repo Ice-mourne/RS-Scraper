@@ -1,0 +1,26 @@
+{
+  "name": "runescape-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "scrapeItems": "node scraper/items.js",
+    "scrapePrices": "node scraper/prices.js",
+    "test": "tsc && node scraper/test.js"
+  },
+  "author": "Icemourne",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "@types/cli-progress": "^3.11.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cli-progress": "^3.12.0",
+    "https-proxy-agent": "^7.0.0",
+    "node-fetch": "^3.3.1"
+  }
+}
